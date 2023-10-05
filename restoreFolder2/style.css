@@ -1,0 +1,53 @@
+
+
+ div#theDiv {
+            width: 230px;
+            height: 150px;
+            margin: 10px;
+            padding: 20px;
+            background: url(images/pic1.jpg) no-repeat;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        p, span {
+            font-size: 16pt;
+        }
+        button {
+            margin: 5px;
+        }
+
+
+    .normal {
+        background-color:White;
+       
+    }
+
+    .highlighted {
+        background-color:Red;
+        text-color: white;
+    }
+    
+    
+    
+        div#theDiv2 {
+                width: 230px;
+                height: 150px;
+                margin: 10px;
+                padding: 20px;
+                background: url(images/pic2.jpg) no-repeat;
+                border: 2px solid black;
+                cursor: pointer;
+            }
+            p, span {
+                font-size: 16pt;
+            }
+            button {
+                margin: 5px;
+        }
+    
+    
+    
+    
+    
+    
+  
