@@ -1,0 +1,64 @@
+
+/***************************************
+=Aslett Clearing Method for floats 
+************************************** */
+.clear-after:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+.clear-after {display: inline-block;}
+/* backslash hack hides from IE Mac \*/
+	* html .clear-after {height: 1%;}
+	.clear-after {display: block;}
+/* end backslash hack */
+
+
+/***************************************
+   =chapter styles
+************************************** */
+
+
+.hover {
+  cursor: pointer;
+  background: #ffc;
+}
+
+#switcher {
+  position: relative;
+  width: 300px;
+  padding: .5em;
+  border: 1px solid #777;
+}
+.label {
+  width: 130px;
+  margin: .5em 0;
+}
+
+.button {
+  width: 140px;
+  padding: 5px;
+  margin: .5em 0;
+  border: 1px solid #e3e3e3;
+  position: relative;
+}
+
+#brave {
+  position: relative;
+}
+.bordered {
+  border: 1px solid #999;
+  padding: 1%;
+  margin-right: 1%;
+}
+.more {
+  clear: left;
+}
+
+
+
+
+
+

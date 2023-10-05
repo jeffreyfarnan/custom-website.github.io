@@ -1,0 +1,25 @@
+    div#theDiv {
+            position:relative;
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            padding: 20px;
+            background: url(../images/galleryCar.jpg) no-repeat;  
+            cursor: pointer;
+        }
+        p, span {
+            font-size: 16pt;
+        }
+        button {
+            margin: 5px;
+        }
+
+#image{
+
+height:180px;
+width:340px;}
+
+.thumb{
+float:left;
+margin-right:10px;
+margin-top:10px;}
