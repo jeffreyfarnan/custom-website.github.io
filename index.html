@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Home</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+ 	<link href="indexFolder/style.css" rel="stylesheet" type="text/css" media="screen" />
+     <link rel="stylesheet" href="accordion.css" />
+
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
+
+
+	<script type="text/javascript" src="accordion/jquery.js"></script>
+	<script type="text/javascript" src="accordion/chili-1.7.pack.js"></script>
+
+	<script type="text/javascript" src="accordion/jquery.easing.js"></script>
+	<script type="text/javascript" src="accordion/jquery.dimensions.js"></script>
+	<script type="text/javascript" src="accordion/jquery.accordion.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            // create the image rotator and rotate every 2 seconds
+            setInterval("rotateImages()", 2000);
+        });
+
+        function rotateImages() {
+        // get the current photo, ie within photoshow the current div
+            var oCurPhoto = $("#photoShow div.current");
+        // get the next sibling to div.current, ie leaf
+            var oNxtPhoto = oCurPhoto.next();
+
+        // if there is no next photo, ie at 4th photo put nextPhoto = 1st photo in div
+            if (oNxtPhoto.length == 0)
+                oNxtPhoto = $("#photoShow div:first");
+
+        // remove the current photo and add the previous photo
+            oCurPhoto.removeClass('current').addClass('previous');
+
+        // set the css start of with opacity 0 so invisible, put it on top  and animate it up to visible
+        // over a second
+        		oNxtPhoto.css({ opacity: 0.0 }).addClass('current').animate({ opacity: 1.0 }, 1000,
+                function() {
+                // remove currents photo previous class
+                    oCurPhoto.removeClass('previous');
+                });
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+	<div class="content">
+
+  <div id="top">
+
+
+    <div class="topright">
+
+
+
+			</div>
+		</div>
+		<div id="header">
+     <div id="photoShow">
+	          <div class="current">
+	              <img src="indexFolder/images/car1.jpg" alt="Photo Gallery" width="800" height="250" class="gallery" />
+	          </div>
+	          <div>
+	              <img src="indexFolder/images/car2.jpg" alt="Photo Gallery" width="800" height="250" class="gallery" />
+	          </div>
+	          <div>
+	              <img src="indexFolder/images/car3.jpg" alt="Photo Gallery" width="800" height="250" class="gallery" />
+	          </div>
+	          <div>
+	              <img src="indexFolder/images/car4.jpg" alt="Photo Gallery" width="800" height="250" class="gallery" />
+	          </div>
+    </div>
+
+		</div>
+
+			<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="index1.html" id="current">Home</a></li>
+<li><a href="restore.html">Restore</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="sales/sales.html">Sales</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+</div>
+
+
+
+
+
+			<div id="main">
+				<div class="right">
+
+
+      					<h2>N@vigate</h2>
+						<div id="navleft">
+						<ul id="navlistleft">
+						<li id="active1"><a href="index1.html">Home</a></li>
+						<li><a href="restore.html">Restore</a></li>
+						<li><a href="sales/sales.html">Sales</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						</ul>
+
+			   </div>
+						<h2>Our Friends</h2>
+
+      					<div class="text"> Please feel free to give our friends your support
+						</div>
+
+						<ul id="navlistleft">
+						<li id="active1"><a href="http://www.classiccar.ie/Home.aspx">Irish Classic Car</a></li>
+						<li><a href="http://irishclassiccars.ie/">Classic Car Club</a></li>
+						<li><a href="http://www.classiccarsales.ie/">Classic Car Sales</a></li>
+						<li><a href="http://homepage.eircom.net/~pkanters/">Classic Car Ireland</a></li>
+						<li><a href="http://www.themetalsurgeon.com/">The Metal Surgeon</a></li>
+						<li><a href="http://www.classiccarcentre.ie/">Classic Car Centre</a></li
+						</ul>
+			</div>
+
+
+
+			 <div class="left">
+
+				<div class="article">
+      <h2>Welcome to our website</h2>
+
+<p>Welcome to the Classic Car Centre website, your source for professionally restored classic cars, repairs, rebuilds and specialist classic car sales in Ireland.
+
+Enjoy browsing our website, which showcases just a selection of past and present work and be sure to contact us should require more details on anything you see here<p>
+
+
+
+
+       <div  style="height:250px;margin-bottom:1em;">
+	  					<ul id="navigation">
+	  						<li>
+	  							<a class="head" href="?p=1.1.1">Complete Auto Recontruction</a>
+	  							<ul>
+	  								<li><a href="?p=1.1.1.1">Classics</a></li>
+	  								<li><a href="?p=1.1.1.2">Restore</a></li>
+	  								<li><a href="?p=1.1.1.3">Racing</a></li>
+	  								<li><a href="?p=1.1.1.5">Accessories</a></li>
+	  							</ul>
+	  						</li>
+	  						<li>
+	  							<a class="head" href="?p=1.1.2">Custom Paint Jobs</a>
+	  							<ul>
+	  								<li><a href="?p=1.1.2.1">Computerized color matching</a></li>
+	  								<li><a href="?p=1.1.2.2">Dupont paint finishes</a></li>
+	  								<li><a href="?p=1.1.2.3">Custom paint finishes</a></li>
+	  								<li><a href="?p=1.1.2.4">Effects</a></li>
+	  								<li><a href="?p=1.1.2.5">Accessories</a></li>
+	  							</ul>
+	  						</li>
+	  						<li>
+	  							<a class="head" href="?p=1.1.3">Racing Parts Available</a>
+	  							<ul>
+	  								<li><a href="?p=1.1.3.2">Roll cages</a></li>
+	  								<li><a href="?p=1.1.3.3">Nitrous oxide</a></li>
+	  								<li><a href="?p=1.1.3.4">Performances parts/a></li>
+	  								<li><a href="?p=1.1.3.5">Hardware</a></li>
+	  								<li><a href="?p=1.1.3.6">Accessories</a></li>
+	  							</ul>
+	  						</li>
+	  					</ul>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <p>For beginners, restoring classic cars may be a very hard task. While it may be safer to hire a mechanic to do all
+ the restoration for you, it will be great if you also learn how to do restoration by yourself. Aside from saving money
+ paid for a mechanic, you get to have a stronger attachment to your car since you will be the one who will put in all
+ the hard work..</p>
+
+				<div class="article">
+
+
+<h2>Core values</h2>
+
+
+				<div class="img_right"><img src="images/img.jpg" alt="" /></div>
+        <p>We know from experience that the key to providing the highest level workmanship is an intense focus on the values that guide our people's actions. These are our Core Values and Beliefs. We respect our people and believe that qualified individuals who are treated with respect and given responsibility respond by performing the best work possible. We require complete honesty and integrity in everything we do. We insist on giving our best effort when performing the art of Auto Restoration</p>
+
+<p>Clarity in understanding our mission, our goals and what we expect from each other is critical to our success. In all our dealings we strive to be professional and fair.</p>
+
+<p>As you look through our website and browse the sections you will see an organized facility with quality techniques being performed on many different types of vehicles. Many of the projects we build are for clients who keep their vehicle for the remainder of their life and pass it on to their family to enjoy it with the same passion!</p>
+
+<p>When building your dream ride with this criteria every detail is accounted for. This type of client will be polishing their pride and joy for many years to come so we want them to know beyond a shadow of a doubt that we provided the highest level workmanship.  If you have any questions to help you decide where to have your project built,  please call us at 210-695-5151 and we will be happy to answer them.</p>
+
+
+
+
+
+	    <blockquote>
+
+	   <p> You have probably been dreaming about having your favorite vehicle brought back to life for quite some time now. </p>
+
+		<p>The look, the feel and the sound as you've seen it finished in your minds eye a thousand times.</p>
+
+		<p> Have you decided "enough is enough", If so then its time to get it done, to possess what you have longed for so that your remaining time will be filled with precious memories that you and your family can cherish for the rest of your lives. Contact us today to get your machine rolling down the road of satisfaction drive</p>
+
+        </blockquote>
+
+<p>Finished Cars and Trucks along with our standard setting techniques have been published since 1985 in major magazines and publications</p>
+
+        </div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="footer">
+			<div class="info">
+
+
+
+    </div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	jQuery().ready(function(){
+		// simple accordion
+		jQuery('#list1a').accordion();
+		jQuery('#list1b').accordion({
+			autoheight: false
+		});
+
+		// second simple accordion with special markup
+		jQuery('#navigation').accordion({
+			active: false,
+			header: '.head',
+			navigation: true,
+			event: 'mouseover',
+			fillSpace: true,
+			animated: 'easeslide'
+		});
+
+		// highly customized accordion
+		jQuery('#list2').accordion({
+			event: 'mouseover',
+			active: '.selected',
+			selectedClass: 'active',
+			animated: "bounceslide",
+			header: "dt"
+		}).bind("change.ui-accordion", function(event, ui) {
+			jQuery('<div>' + ui.oldHeader.text() + ' hidden, ' + ui.newHeader.text() + ' shown</div>').appendTo('#log');
+		});
+
+		// first simple accordion with special markup
+		jQuery('#list3').accordion({
+			header: 'div.title',
+			active: false,
+			alwaysOpen: false,
+			animated: false,
+			autoheight: false
+		});
+
+		var wizard = $("#wizard").accordion({
+			header: '.title',
+			event: false
+		});
+
+		var wizardButtons = $([]);
+		$("div.title", wizard).each(function(index) {
+			wizardButtons = wizardButtons.add($(this)
+			.next()
+			.children(":button")
+			.filter(".next, .previous")
+			.click(function() {
+				wizard.accordion("activate", index + ($(this).is(".next") ? 1 : -1))
+			}));
+		});
+
+		// bind to change event of select to control first and seconds accordion
+		// similar to tab's plugin triggerTab(), without an extra method
+		var accordions = jQuery('#list1a, #list1b, #list2, #list3, #navigation, #wizard');
+
+		jQuery('#switch select').change(function() {
+			accordions.accordion("activate", this.selectedIndex-1 );
+		});
+		jQuery('#close').click(function() {
+			accordions.accordion("activate", -1);
+		});
+		jQuery('#switch2').change(function() {
+			accordions.accordion("activate", this.value);
+		});
+		jQuery('#enable').click(function() {
+			accordions.accordion("enable");
+		});
+		jQuery('#disable').click(function() {
+			accordions.accordion("disable");
+		});
+		jQuery('#remove').click(function() {
+			accordions.accordion("destroy");
+			wizardButtons.unbind("click");
+		});
+	});
+	</script>
+
+</html>
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+
+<A NAME="top">
+    <title>Restore</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="restoreFolder/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            // create the image rotator and rotate every 2 seconds
+            setInterval("rotateImages()", 2000);
+        });
+
+        function rotateImages() {
+        // get the current photo, ie within photoshow the current div
+            var oCurPhoto = $("#photoShow div.current");
+        // get the next sibling to div.current, ie leaf
+            var oNxtPhoto = oCurPhoto.next();
+
+        // if there is no next photo, ie at 4th photo put nextPhoto = 1st photo in div
+            if (oNxtPhoto.length == 0)
+                oNxtPhoto = $("#photoShow div:first");
+
+        // remove the current photo and add the previous photo
+            oCurPhoto.removeClass('current').addClass('previous');
+
+        // set the css start of with opacity 0 so invisible, put it on top  and animate it up to visible
+        // over a second
+        		oNxtPhoto.css({ opacity: 0.0 }).addClass('current').animate({ opacity: 1.0 }, 1000,
+                function() {
+                // remove currents photo previous class
+                    oCurPhoto.removeClass('previous');
+                });
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+	<div class="content">
+
+  <div id="top">
+
+
+    <div class="topright">
+
+
+
+			</div>
+		</div>
+		<div id="header">
+<img src="restoreFolder/images/cover.jpg" alt="Photo Gallery" width="800" height="270" class="gallery" />
+
+		</div>
+
+
+			<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="index1.html" id="current">Home</a></li>
+<li><a href="restore.html">Restore</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="sales/sales.html">Sales</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+
+		<div id="main">
+						<div class="right">
+
+
+		      					<h2>N@vigate</h2>
+								<div id="navleft">
+								<ul id="navlistleft">
+								<li id="active1"><a href="index1.html">Home</a></li>
+								<li><a href="restore.html">Restore</a></li>
+								<li><a href="sales/sales.html">Sales</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								</ul>
+
+					   </div>
+								<h2>Our Friends</h2>
+
+		      					<div class="text"> Please feel free to give our friends your support
+								</div>
+
+								<ul id="navlistleft">
+								<li id="active1"><a href="http://www.classiccar.ie/Home.aspx">Irish Classic Car</a></li>
+								<li><a href="http://irishclassiccars.ie/">Classic Car Club</a></li>
+								<li><a href="http://www.classiccarsales.ie/">Classic Car Sales</a></li>
+								<li><a href="http://homepage.eircom.net/~pkanters/">Classic Car Ireland</a></li>
+								<li><a href="http://www.themetalsurgeon.com/">The Metal Surgeon</a></li>
+								<li><a href="http://www.classiccarcentre.ie/">Classic Car Centre</a></li
+								</ul>
+			</div>
+
+
+
+			 <div class="left">
+
+
+				<div class="article">
+      <h2>1938 Chevrolet Pepsi Truck Custom Build</h2>
+
+	      <div id="photoShow">
+	          <div class="current">
+	              <img src="restoreFolder/images/car1.jpg" alt="Photo Gallery" width="580" height="380" class="gallery" />
+	          </div>
+	          <div>
+	              <img src="restoreFolder/images/car2.jpg" alt="Photo Gallery" width="580" height="380" class="gallery" />
+	          </div>
+	          <div>
+	              <img src="restoreFolder/images/car3.jpg" alt="Photo Gallery" width="580" height="380" class="gallery" />
+	          </div>
+	          <div>
+	              <img src="restoreFolder/images/car4.jpg" alt="Photo Gallery" width="580" height="380" class="gallery" />
+	          </div>
+    </div>
+ <p>This post shows how to accomplish custom metal work with the aid of simple tooling from the scrap bin.
+ This kind of tooling is invaluable when performing automotive restoration, whether going for custom made
+ creations or original body styling.  Not only is the tooling going to be simple to make, it’s going to be super cheap!
+ The example job is making a pair of defroster/heater vents for the 1938 Chevrolet Pepsi truck dashboard</p>
+
+				<div class="article">
+
+
+
+
+
+				<div class="img_right"><img src="restoreFolder/images/small.jpg" alt="" /></div>
+
+        <p>We’ve began an exciting custom Chevy truck project for the Pepsi bottling company.  We were commissioned by
+        Newberry Motors GM dealership to undertake the custom metal work and restoration in their home town of Newberry,
+        MI.  After spending 7 weeks there, we completed the first stage of the metal work build.  After discussions and
+        meetings, the owner and Newberry Motors decided to send the truck back with me to my shop in Denver, Colorado.  This is exciting for the Metal Surgeon as our new goal is to complete the whole project and deliver back to Michigan completed and ready for the 4th July Michigan Parade next year</p>
+
+<p>So, let’s tell you about the 1938 Chevy truck and what we’ll be doing to the truck.  The objective is to have the truck
+drive like a modern vehicle while in keeping the classic looks and style.  On our arrival in Newberry, a freshly built chassis with a new drive train was ready and waiting
+to mount the dismantled cab and components onto.  As mentioned, the overall look of the truck will be kept in line with the original look, but with subtle custom touches.  The planned modifications are as follows:</p>
+
+
+
+
+
+
+	    <blockquote>
+          <p> We’ve began an exciting custom Chevy truck project for the Pepsi bottling company.
+          We were commissioned by Newberry Motors GM dealership to undertake the custom metal work
+          and restoration in their home town of Newberry, MI.  After spending 7 weeks there, we completed
+          the first stage of the metal work build.</p>
+        </blockquote>
+
+
+
+	  <div class="article">
+
+
+<p>
+After building the radiator shell, we decided to build some custom panel work to compliment the classic style of
+the radiator shell.  We stayed with the original 1932 Ford parameters on the hood and sides but opted to create
+some custom scoops.  The scoops create three things:  rigidity in the panel, air flow, and uniqueness, as the
+panels you see below are all one of a kind.
+</p>
+
+</div><p>To help create the scoop work in the panels, we made a hammer form jig.  Each panel was clamped to the jig,
+then the aluminum was ‘jig chased’ into the depth of the jig, after annealing it (a heat treatment to make the aluminum
+soft and workable).
+<br><br>
+<A HREF="#top">Back To Top</A>
+<br>
+<br>
+<a href="restore2.html">Restored</a>
+        </div>
+				</div>
+			</div>
+
+
+
+
+		<div id="footer">
+			<div class="info">
+
+
+
+    </div>
+	</div>
+</body>
+</html>
+

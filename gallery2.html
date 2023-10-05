@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US">
+<head>
+<title>Gallery 2</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Your Website Description" />
+<meta name="keywords" content="keywords, go, here" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="galleryFolder2/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+
+<style type="text/css" media="screen">
+			.zoom{
+				float:left;
+			}
+			body{
+				background:#111;
+			}
+		</style>
+
+
+
+
+		<script type="text/javascript" src="galleryFolder2/js/jjquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="galleryFolder2/js/jquery.imageZoom.js"></script>
+
+
+		<script type="text/javascript" src="galleryFolder2/js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="galleryFolder2/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="galleryFolder2/js/jquery.zaccordion.min.js"></script>
+
+
+
+
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#example1").zAccordion({
+					tabWidth: "5%",
+					width: "83%",
+					height: "100%"
+				});
+				$(window).resize(function() {
+					$("#example1").height($(window).height());
+					$("#example1 li").height($(window).height());
+					$("#example1 img").height($(window).height());
+				});
+			});
+		</script>
+
+
+</head>
+
+
+<body>
+	<div class="content">
+
+  <div id="top">
+
+
+    <div class="topright">
+
+
+
+			</div>
+		</div>
+		<div id="header">
+<ul id="example1">
+				<li><img src="galleryFolder2/images/car1.jpg" width="100%" height="130%" alt="" /></li>
+				<li><img src="galleryFolder2/images/car2.jpg" width="140%" height="130%" alt="" /></li>
+				<li><img src="galleryFolder2/images/car3.jpg" width="140%" height="160%" alt="" /></li>
+				<li><img src="galleryFolder2/images/car4.jpg" width="140%" height="160%" alt="" /></li>
+				<li><img src="galleryFolder2/images/car5.jpg" width="140%" height="160%" alt="" /></li>
+			</ul>
+
+		</div>
+
+			<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="index1.html" id="current">Home</a></li>
+<li><a href="restore.html">Restore</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="sales/sales.html">Sales</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+
+
+	<div id="main">
+					<div class="right">
+
+
+	      					<h2>N@vigate</h2>
+							<div id="navleft">
+							<ul id="navlistleft">
+							<li id="active1"><a href="index1.html">Home</a></li>
+							<li><a href="restore.html">Restore</a></li>
+							<li><a href="sales/sales.html">Sales</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							</ul>
+
+				   </div>
+							<h2>Our Friends</h2>
+
+	      					<div class="text"> Please feel free to give our friends your support
+							</div>
+
+							<ul id="navlistleft">
+							<li id="active1"><a href="http://www.classiccar.ie/Home.aspx">Irish Classic Car</a></li>
+							<li><a href="http://irishclassiccars.ie/">Classic Car Club</a></li>
+							<li><a href="http://www.classiccarsales.ie/">Classic Car Sales</a></li>
+							<li><a href="http://homepage.eircom.net/~pkanters/">Classic Car Ireland</a></li>
+							<li><a href="http://www.themetalsurgeon.com/">The Metal Surgeon</a></li>
+							<li><a href="http://www.classiccarcentre.ie/">Classic Car Centre</a></li
+							</ul>
+				</div>
+
+
+    <div class="left">
+
+	<div class="images">
+      <h2>Gallery</h2>
+
+			<img src="galleryFolder2/images/car1small.jpg" alt="car1" id="computer_works" />
+			<p>car 1</p>
+			<img src="galleryFolder2/images/car2small.jpg" alt="car2" class="" />
+			<p>car 2</p>
+			<img src="galleryFolder2/images/car3small.jpg" alt="car3" class="" />
+			<p>car 3</p>
+			<img src="galleryFolder2/images/car4small.jpg" alt="car4" class="" />
+			<p>car 4</p>
+
+				<br><br>
+<a href="gallery.html">Go Back</a>
+
+
+				</div>
+			</div>
+
+		</div>
+
+		<div id="footer">
+			<div class="info">
+
+
+
+    </div>
+	</div>
+</body>
+	<script src="jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.imageZoom.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$('.zoom').imageZoom({captionHeight:40});
+			});
+		</script>
+</html>
